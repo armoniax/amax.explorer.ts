@@ -13,7 +13,7 @@ Before running docker-compose, please set up node with mongo_db and optional hit
 
 ## Config.js set up
 1. To set up eosConfig, you should set up config.endpoints with current blockchain working http endpoints.                                        
-`config.endpoints = ['http://expnode.mgpchain.io'];`                                                                                    
+`config.endpoints = ['https://scan.amax.network'];`                                                                                    
 1. Then, you also should provide current blockchain chainId to config.eosConfig.                                                               
 `config.eosConfig = {                          
   chainId: "cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f",                                
@@ -29,26 +29,26 @@ Before running docker-compose, please set up node with mongo_db and optional hit
 };`                                   
 1. Optionally, you also can set up api endpoints for producers list and history (history and history_api plugins should be enabled).                    
 **api url for producers list**                                      
-`config.customChain = 'http://expnode.mgpchain.io';  `                                                                 
+`config.customChain = 'https://expnode.amax.network';  `                                                                 
 **api url for history**                                                          
-`config.historyChain = 'http://expnode.mgpchain.io';  `                   
+`config.historyChain = 'https://expnode.amax.network';  `                   
 
 ## src/environments/environment.prod.ts set up
 1. Set up actual blockchain chain id.                   
 `const chain = 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f';`                                          
 1. Set up host, port and actual http node endpoint here.                           
 `network: {                       
-        blockchain: 'eos',                    
-        host: 'expnode.mgpchain.io',                      
+        blockchain: 'amax',                    
+        host: 'expnode.amax.network',                      
         port: 80,                            
         protocol: 'http',                                
         expireInSeconds: 120,                                                 
-        chainId: chain                               
+        chainId: amax-chain                               
     },                                
-    chain: chain,                                   
-    Eos: {                                
-        httpEndpoint: 'http://expnode.mgpchain.io',                        
-        chainId: chain,                          
+    chain: amax-chain,                                   
+    amax: {                                
+        httpEndpoint: 'https://expnode.amax.network',                        
+        chainId: amax-chain,                          
         verbose: false                                
     },`               
                                     
@@ -57,7 +57,7 @@ Before running docker-compose, please set up node with mongo_db and optional hit
    * First-time
    ```docker-compose up --build```
    * Subsequent times                         
-   ```docker-compose up```                                             
+   ```docker-compose up -d```                                             
                                                       
 ## Development server
 
