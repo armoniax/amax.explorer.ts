@@ -1,4 +1,4 @@
-# LightNet block explorer
+# Armonia blockchain explorer
 
 [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4
 
