@@ -57,10 +57,10 @@ export const environment = {
 const chain = 'cf057bbfb72640471fd910bcb67639c22df9f92470936cddc1ade0e2f2e7dc4f';
 export const environment = {
     production: true,
-    appName: 'MGP',
+    appName: 'AMAX',
     network: {
-        blockchain: 'eos',
-        host: 'sh-expnode.vm.mgps.me',
+        blockchain: 'AMAX',
+        host: 'testnet.amaxscan.io',
         port: 8888,
         protocol: 'http',
         expireInSeconds: 120,
@@ -68,15 +68,15 @@ export const environment = {
     },
     chain: chain,
     Eos: {
-        httpEndpoint: 'https://sh-expnode.vm.mgps.me:8888',
+        httpEndpoint: 'https://testnet.amaxscan.io:8888',
         chainId: chain,
         verbose: false
     },
     frontConfig: {
-       coin: 'MGP',
+       coin: 'AMAX',
        bp: 'bp.json',
-       tokenContract: 'eosio.token',
-       totalBalance: 'MGP',
+       tokenContract: 'amax.token',
+       totalBalance: 'AMAX',
        convertToUSD: false,
        customBalance: false,
        logo: '/assets/images/mgpio.png',
@@ -84,7 +84,7 @@ export const environment = {
           big: '',
           small: ''
        },
-       nets: [{ name: 'MGP', url: '127.0.0.1:3039', active: true }],
+       nets: [{ name: 'AMAX', url: '127.0.0.1:3039', active: true }],
        disableNets: true,
        voteDonationAcc: 'cryptolions1',
        disableVoteDonation: true,
