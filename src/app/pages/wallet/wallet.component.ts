@@ -20,7 +20,7 @@ export class WalletPageComponent implements OnInit {
       symbol: 'MGP'
   };
   contractMethod = '';
-  contractName = 'eosio';
+  contractName = 'amax';
   contractField = {};
   contractFieldsRender = [];
   frontConfig = environment.frontConfig;

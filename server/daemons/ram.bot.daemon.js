@@ -108,8 +108,8 @@ module.exports = function(mongoMain){
 			}
 			global.eos.getTableRows({
 	               json: true,
-	               code: "eosio",
-	               scope: "eosio",
+	               code: "amax",
+	               scope: "amax",
 	               table: "rammarket",
 	               limit: 10
 	           })
@@ -147,8 +147,8 @@ module.exports = function(mongoMain){
 		setTimeout(() => {
 			global.eos.getTableRows({
 	               json: true,
-	               code: "eosio",
-	               scope: "eosio",
+	               code: "amax",
+	               scope: "amax",
 	               table: "rammarket",
 	               limit: 10
 	           })

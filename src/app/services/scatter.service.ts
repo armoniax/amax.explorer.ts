@@ -9,7 +9,7 @@ import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
 export class ScatterService {
 
   initCounterErr = 0;
-  contract = 'eosio';
+  contract = 'amax';
   spinnerRAM = false;
   mainDataRAM;
   orderHistoryRAM;
@@ -38,7 +38,7 @@ export class ScatterService {
 
 
   getRam(){
-      this.http.get(`/api/v1/get_table_rows/eosio/eosio/rammarket/10`)
+      this.http.get(`/api/v1/get_table_rows/amax/amax/rammarket/10`)
           .subscribe((res: any) => {
                           this.countRamPrice(res);
                       },
@@ -72,7 +72,7 @@ export class ScatterService {
   }
 
   getBalance(){
-      this.http.get(`/api/v1/get_currency_balance/eosio.token/${this.loginEOSService.accountName}/EOS`)
+      this.http.get(`/api/v1/get_currency_balance/amax.token/${this.loginEOSService.accountName}/EOS`)
            .subscribe((res: any) => {
                           this.unstaked = (!res[0]) ? 0 : Number(res[0].split(' ')[0]); 
                           if (this.mainDataRAM.voter_info && this.mainDataRAM.voter_info.staked){

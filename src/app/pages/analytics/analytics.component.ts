@@ -80,7 +80,7 @@ export class AnalyticsPageComponent implements OnInit{
   };
 
   getGlobal(){
-      this.http.get(`/api/v1/get_table_rows/eosio/eosio/global/10`)
+      this.http.get(`/api/v1/get_table_rows/amax/amax/global/10`)
           .subscribe((res: any) => {
                           if (!res || !res.rows){
                               return console.error('data error', res);

@@ -125,7 +125,7 @@ export class MainCustomizeChartsComponent implements OnInit{
   }
 
   getRam(){
-      this.http.get(`/api/v1/get_table_rows/eosio/eosio/rammarket/10`)
+      this.http.get(`/api/v1/get_table_rows/amax/amax/rammarket/10`)
           .subscribe((res: any) => {
                           this.countRamPrice(res);
                       },

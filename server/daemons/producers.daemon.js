@@ -17,8 +17,8 @@ async function updateProducersInfo(){
 			method: 'POST', 
 			body: {
 				json: true,
-				code: "eosio",
-				scope: "eosio",
+				code: "amax",
+				scope: "amax",
 				table: "producers",
 				limit: PRODUCERS_LIMITS
 			}, 

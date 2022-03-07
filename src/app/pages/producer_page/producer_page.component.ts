@@ -41,8 +41,8 @@ export class ProducerComponent implements OnInit, OnDestroy{
 
   getData(){
       this.spinner = true;
-  		let producers = this.http.get(`/api/custom/get_table_rows/eosio/eosio/producers/500`)
-      let global     = this.http.get(`/api/v1/get_table_rows/eosio/eosio/global/1`);
+  		let producers = this.http.get(`/api/custom/get_table_rows/amax/amax/producers/500`)
+      let global     = this.http.get(`/api/v1/get_table_rows/amax/amax/global/1`);
 
       forkJoin([producers, global])
   				 .subscribe(

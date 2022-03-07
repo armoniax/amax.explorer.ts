@@ -7,18 +7,18 @@
 <url><loc>https://eosweb.net/accounts</loc></url>
 <url><loc>https://eosweb.net/producers</loc></url>
 <url><loc>https://eosweb.net/api</loc></url>
-<url><loc>https://eosweb.net/account/eosio.msig</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.token</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.ram</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.ramfee</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.names</loc></url>
+<url><loc>https://eosweb.net/account/amax.msig</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.token</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.ram</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.ramfee</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.names</loc></url>
       	<url><loc>https://eosweb.net/account/</loc></url>
       	<url><loc>https://eosweb.net/account/</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.stake</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.saving</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.bpay</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.vpay</loc></url>
-      	<url><loc>https://eosweb.net/account/eosio.unregd</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.stake</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.saving</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.bpay</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.vpay</loc></url>
+      	<url><loc>https://eosweb.net/account/amax.unregd</loc></url>
       	<url><loc>https://eosweb.net/account/b1</loc></url>
       	<url><loc>https://eosweb.net/account/heztcnjtguge</loc></url>
       	<url><loc>https://eosweb.net/account/heztcnjuhege</loc></url>

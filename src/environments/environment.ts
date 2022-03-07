@@ -24,7 +24,7 @@ export const environment = {
     frontConfig: {
        coin: 'EOS',
        bp: 'bp.json',
-       tokenContract: 'eosio.token',
+       tokenContract: 'amax.token',
        totalBalance: 'EOS',
        convertToUSD: true,
        customBalance: false,
@@ -68,7 +68,7 @@ export const environment = {
     },
     chain: chain,
     Eos: {
-        httpEndpoint: 'https://testnet.amaxscan.io:8888',
+        httpEndpoint: 'http://t1.amaxscan.io:8888',
         chainId: chain,
         verbose: false
     },

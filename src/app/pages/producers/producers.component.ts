@@ -41,8 +41,8 @@ export class ProducersPageComponent implements OnInit, OnDestroy{
 
   getBlockData(){
       this.spinner   = (this.firstLoad) ? true : false;
-  		let producers  = this.http.get(`/api/custom/get_table_rows/eosio/eosio/producers/${this.frontConfig.producers}`);
-      let global     = this.http.get(`/api/v1/get_table_rows/eosio/eosio/global/1`);
+  		let producers  = this.http.get(`/api/custom/get_table_rows/amax/amax/producers/${this.frontConfig.producers}`);
+      let global     = this.http.get(`/api/v1/get_table_rows/amax/amax/global/1`);
       let bpInfo     = this.http.get(`/api/v1/get_producers_bp_json`);
 
       forkJoin([producers, global, bpInfo])
@@ -112,7 +112,7 @@ export class ProducersPageComponent implements OnInit, OnDestroy{
   }
 
   getSupplyEOS(globalTable){
-    this.http.get(`/api/custom/get_table_rows/eosio.token/${this.frontConfig.coin}/stat/1`)
+    this.http.get(`/api/custom/get_table_rows/amax.token/${this.frontConfig.coin}/stat/1`)
              .subscribe((res: any) => {
                 if (!res || !res.rows || !res.rows[0] || !res.rows[0].supply){
                     return;

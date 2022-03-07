@@ -56,7 +56,7 @@ function findBalanceAndUpdate(account, callback) {
       }
 
  	  eos.getCurrencyBalance({
-      			code: 'eosio.token',
+      			code: 'amax.token',
       			account: account.account_name
 			}).then(balance => {
 	   	 		accInfo.balance = Array.isArray(balance) ? balance : [];

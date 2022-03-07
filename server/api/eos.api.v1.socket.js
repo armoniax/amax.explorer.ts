@@ -123,8 +123,8 @@ module.exports = (io, mongoMain, metrics) => {
       let timeRequestStart = +new Date(); 
       let formData = { 
         json: true,
-        code: 'eosio',
-        scope: 'eosio',
+        code: 'amax',
+        scope: 'amax',
         table: 'producers',
         limit: 500
       };
@@ -171,8 +171,8 @@ module.exports = (io, mongoMain, metrics) => {
       let timeRequestStart = +new Date();
       global.eos.getTableRows({
           json: true,
-          code: "eosio",
-          scope: "eosio",
+          code: "amax",
+          scope: "amax",
           table: "rammarket",
           limit: 10
       }).then(result => {
