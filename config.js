@@ -42,8 +42,7 @@ config.telegram = {
 
 // reserve nodes
 config.endpoints = [
-//	'http://sh-exp.vmi.mgps.me:8888'
-	'https://sh-expnode.vm.mgps.me:8888'
+	'http://172.17.0.1:8888'
      //'http://bp.cryptolions.io',
      //'https://eos.greymass.com',
      //'https://public.eosinfra.io', 
@@ -65,10 +64,10 @@ config.eosConfig = {
 };
 
 // api url for producers list
-config.customChain = 'http://sh-expnode.vm.mgps.me:8888';
+config.customChain = 'http://172.17.0.1:8888';
 
 // api url for history
-config.historyChain = 'http://sh-expnode.vm.mgps.me:8888';
+config.historyChain = 'http://172.17.0.1:8888';
 
 // tokens api
 //config.tokensAPI = 'http://api.light.xeos.me/api/account/eos/';

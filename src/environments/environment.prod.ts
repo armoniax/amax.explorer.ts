@@ -12,7 +12,7 @@ export const environment = {
     },
     chain: chain,
     Eos: {
-        httpEndpoint: 'https://testnet.amaxscan.io:8888',
+        httpEndpoint: 'http://172.17.0.1:8888',
         chainId: chain,
         verbose: false
     },
